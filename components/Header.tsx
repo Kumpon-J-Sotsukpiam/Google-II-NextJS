@@ -5,6 +5,7 @@ import { XIcon } from '@heroicons/react/outline'
 import { MicrophoneIcon, SearchIcon } from '@heroicons/react/solid'
 
 import Avatar from './Avatar'
+import HeaderOptions from './HeaderOptions'
 
 export default function () {
     const router = useRouter()
@@ -55,6 +56,7 @@ export default function () {
                     url='https://lh3.googleusercontent.com/a-/AOh14GhxFrZThqhiAf90gcAj8gnNdOpWW0Gphr7JuunJ0Sg=s288-p-rw-no'
                 />
             </div>
+            <HeaderOptions />
         </header>
     )
 }
