@@ -1,4 +1,5 @@
 import React from 'react'
+import PaginationButtons from './PaginationButtons'
 
 export default function SearchResults({ results }: any) {
     return (
@@ -19,6 +20,7 @@ export default function SearchResults({ results }: any) {
                     <p className='line-clamp-2'>{result.snippet}</p>
                 </div>
             ))}
+            <PaginationButtons />
         </div>
     )
 }

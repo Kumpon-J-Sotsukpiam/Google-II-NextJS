@@ -9,16 +9,18 @@ import HeaderOptions from './HeaderOptions'
 
 export default function () {
     const router = useRouter()
-    const searchInputRef = useRef<any>(null)
+    console.log(router.query?.search);
+
+    const searchInputRef = useRef<any>()
     const search = (e: any) => {
         e.preventDefault()
-        const term = searchInputRef.current.value;
-        if (!term) return;
+        const search = searchInputRef.current.value;
+        if (!search) return;
 
         router.push({
             pathname: '/search',
             query: {
-                search: term
+                search
             }
         })
     }
